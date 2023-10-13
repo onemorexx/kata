@@ -38,6 +38,7 @@ func parse(data string) {
 
 			result := process(split[1], firstDigit, secondDigit)
 			result1 := integerToRoman(result)
+
 			if result <= 0 {
 				panic("no 0 or negative in romanian")
 			}
@@ -76,9 +77,11 @@ func add(firstDigit int, secondDigit int) int {
 func subtract(firstDigit int, secondDigit int) int {
 	return firstDigit - secondDigit
 }
+
 func divide(firstDigit int, secondDigit int) int {
 	return firstDigit / secondDigit
 }
+
 func multiplication(firstDigit int, secondDigit int) int {
 	return firstDigit * secondDigit
 }
